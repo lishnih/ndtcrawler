@@ -93,7 +93,7 @@ def server_func(options, args):
     try:
         # Создаём сервер
         server = SocketServer.TCPServer((options.host, options.port), MyTCPHandler)
-    
+
         # Открываем последовательный порт
         try:
             s = enhancedserial.EnhancedSerial(options.arduino)

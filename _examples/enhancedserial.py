@@ -11,7 +11,7 @@ this class could be enhanced with a read_until() method and more
 like found in the telnetlib.
 """
 
-from serial import Serial, SerialException
+from serial import Serial
 
 class EnhancedSerial(Serial):
     def __init__(self, *args, **kwargs):
